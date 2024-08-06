@@ -11,8 +11,9 @@ public class Main {
         double sum = num1 + num2;
         double min = num1 - num2;
         double result = sum / min;
-        result=Math.round(result*100) / 100.0;
-        bw.write(Double.toString(result));
+        result = Math.round(result * 100) / 100.0;
+        String formattedResult = String.format("%.2f", result);
+        bw.write(formattedResult);
         bw.newLine();
         bw.flush();
         bw.close();
