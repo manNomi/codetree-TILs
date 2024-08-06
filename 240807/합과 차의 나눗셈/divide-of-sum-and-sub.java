@@ -12,7 +12,7 @@ public class Main {
         double min = num1-num2;
         double result = sum / min;
         result=Math.round(result*100) / 100.0;
-        bw.write(Double.toString(result));
+        bw.write(String.format("%.2f", result));
         bw.newLine();
         bw.flush();
         bw.close();
